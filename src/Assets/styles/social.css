@@ -1,0 +1,15 @@
+#social {
+    float: right;
+    position: sticky;
+    margin-top: 6rem;
+}
+
+#social .btn {
+    background-color: #4ECDC4;
+    border: 1px solid #FFF;
+    border-radius: 0;
+}
+
+#social .list-group-item img {
+    width: 50%;
+}

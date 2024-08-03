@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: rgba(21,18,20,80%);    
+}
+
+h1 {
+  @apply text-4xl my-6;
+  line-height: 1.1;
+}
+
+h2 {
+  @apply text-3xl my-4;
+}
+
+h3 {
+  @apply text-2xl my-2;
+}
+
+h4 {
+  @apply text-2xl;
+  color: #6D66CC;
+}
+
+h5 {
+  @apply text-xl;
+}
+
+p {
+  @apply my-2;
+}
+
+blockquote {
+  color: rgba(21,18,20,80%);
+  font-style: italic;
+  padding-left: 1.5rem;
+  margin-right: 1.5rem;
+  border-left: 6px solid #5850d1;
+}
+
+em, strong {
+  color: #F05271;
+}
+
+a {
+  color: #6D66CC;
+}
+
+.btn {
+  @apply btn-outline rounded-none;
+}
+
+.btn-outline-primary {
+  border-color: #5850d1;
+  color: #5850d1;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 0;
+      letter-spacing: .05rem;
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled):hover, 
+.btn-outline-primary:not(:disabled):not(.disabled):active {
+  background-color: #383899;
+  border-color: #383899;
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled).active:focus, 
+.btn-outline-primary:not(:disabled):not(.disabled):active:focus, 
+.show>.btn-outline-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgb(62 56 153 / 50%);
+}
+
+.nav-link {
+  color: rgba(21,18,20,.7);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+.text-muted{
+  @apply text-secondary;
+}
+
+/* Tabs */
+
+.tab:is(input[type="radio"]) {
+  @apply min-w-[225px] text-base border-b-2 border-b-primary;
+}
+
+.tab:is(input:checked) {
+  @apply bg-primary text-white;
+}
+
+input[name="my_tabs_2"]:is(input:checked),
+input[name="my_tabs_3"]:is(input:checked){
+  @apply bg-secondary;
+}
+
+input[name="my_tabs_2"]:is(input[type="radio"]),
+input[name="my_tabs_3"]:is(input[type="radio"]) {
+  @apply min-w-[225px] text-base border-b-2 border-b-secondary;
+}
+
+/* Cards */
+.card {
+  @apply rounded-none mt-1;
+}
+.card-title {
+ @apply text-[#rgba(21,18,20,80%)] uppercase mb-3;
+}
+
+h2.card-title {
+  @apply text-3xl;
+}
+
+h3.card-title {
+  @apply text-2xl;
+}

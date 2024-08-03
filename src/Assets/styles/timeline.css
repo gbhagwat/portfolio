@@ -1,0 +1,180 @@
+/* timeline */
+
+.timeline_journey {
+    padding: 100px 0;
+    position: relative;
+    background-color: #f3f2ff;
+}
+.timeline_journey::before {
+  content: "";
+  background: #c5cae9;
+  width: 5px;
+  height: 95%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  width: 100%;
+  margin-bottom: 70px;
+}
+.timeline-item:nth-child(even) .timeline-content {
+  float: right;
+  padding: 40px 30px 10px 30px;
+}
+.timeline-item:nth-child(even) .timeline-content .date {
+  right: auto;
+  left: 0;
+}
+.timeline-item:nth-child(even) .timeline-content::after {
+  content: "";
+  position: absolute;
+  border-style: solid;
+  width: 0;
+  height: 0;
+  top: 30px;
+  left: -15px;
+  border-width: 10px 15px 10px 0;
+  border-color: transparent #f5f5f5 transparent transparent;
+}
+.timeline-item::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.timeline-content {
+  position: relative;
+  width: 45%;
+  padding: 10px 30px;
+  border-radius: 4px;
+  background: #fff;
+ /* box-shadow: 0 20px 25px -15px rgba(0, 0, 0, 0.3);*/
+}
+
+.timeline-content p:last-child {
+    padding-bottom: 2em;
+}
+.timeline-content::after {
+  content: "";
+  position: absolute;
+  border-style: solid;
+  width: 0;
+  height: 0;
+  top: 30px;
+  right: -15px;
+  border-width: 10px 0 10px 15px;
+  border-color: transparent transparent transparent #f5f5f5;
+}
+
+.timeline-img {
+  width: 30px;
+  height: 30px;
+  background: #5850d1;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  margin-top: 25px;
+  margin-left: -15px;
+}
+
+.timeline_journey a {
+  text-transform: uppercase;
+}
+.timeline_journey a:hover, 
+.timeline_journey a:active, 
+.timeline_journey a:focus {
+  background: #32408f;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.timeline-card {
+  padding: 0 !important;
+}
+.timeline-card p {
+  padding: 0 20px 10px 20px;
+}
+.timeline-card a {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.timeline-item .timeline-img-header {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("https://picsum.photos/1000/800/?random") center center no-repeat;
+  background-size: cover;
+}
+.timeline-img-header.header-sherwin {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("../images/timeline/analytics.jpg") center center no-repeat;
+}
+.timeline-img-header.header-disney {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("../images/timeline/DISNEY.jpg") center center no-repeat;
+}
+.timeline-img-header.header-college {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("../images/timeline/reading.jpg") center center no-repeat;    
+}
+.timeline-img-header.header-tech {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("../images/timeline/tech-writing.jpg") center center no-repeat;    
+}
+.timeline-img-header.header-ux {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("../images/timeline/uxd-tools.jpg") center center no-repeat;    
+}
+.timeline-img-header.header-now {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("../images/timeline/users.jpg") center center no-repeat;    
+}
+.timeline-img-header {
+  height: 200px;
+  position: relative;
+  margin-bottom: 20px;
+}
+.timeline-img-header h2 {
+  color: #ffffff;
+  position: absolute;
+  bottom: 5px;
+  left: 20px;
+}
+
+.timeline_journey blockquote {
+  margin-top: 30px;
+  color: #757575;
+  border-left-color: #3f51b5;
+  padding: 0 20px;
+}
+
+.date {
+  background: #F05271;
+  display: inline-block;
+  color: #ffffff;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .timeline_journey::before {
+    left: 50px;
+  }
+  .timeline_journey .timeline-img {
+    left: 50px;
+  }
+  .timeline_journey .timeline-content {
+    max-width: 100%;
+    width: auto;
+    margin-left: 70px;
+  }
+  .timeline_journey .timeline-item:nth-child(even) .timeline-content {
+    float: none;
+  }
+  .timeline_journey .timeline-item:nth-child(odd) .timeline-content::after {
+    content: "";
+    position: absolute;
+    border-style: solid;
+    width: 0;
+    height: 0;
+    top: 30px;
+    left: -15px;
+    border-width: 10px 15px 10px 0;
+    border-color: transparent #f5f5f5 transparent transparent;
+  }
+}
