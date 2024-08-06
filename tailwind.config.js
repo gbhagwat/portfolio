@@ -2,6 +2,11 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
+    colors: {
+      'light-purple' : '#6D66CC',
+      'white' : '#FFFFFF',
+      'dark-purple' : '#383899'
+    },
     extend: {},
   },
   plugins: [
@@ -12,9 +17,9 @@ module.exports = {
       {
         mytheme: {         
         "primary": "#F05271",               
-        "secondary": "#5850d1",                 
+        "secondary": "#5850d1",  
         "accent": "#4ecdc4",                 
-        "neutral": "#f05271be",                 
+        "neutral": "#151214cc",                 
         "base-100": "#ffffff",                 
         "info": "#0894c4",                 
         "success": "#52cd83",                 
