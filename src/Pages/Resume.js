@@ -27,7 +27,7 @@ export function Resume() {
                                 <div className="card-body">
                                     <div className="grid gap-4 grid-cols-3">
                                         <div className="col-span-3">                                    
-                                            <p className="company">CACI International | <span className="location">Multiple Locations</span></p>
+                                            <h5 className="company">CACI International | <span className="location">Multiple Locations</span></h5>
                                         </div>
 
                                         <div className="col-span-1">
@@ -87,7 +87,7 @@ export function Resume() {
                                         </div>
     
                                         <div className="col-span-3">                         
-                                            <p className="company">Nelson Stud Welding | <span className="location">Elyria, Ohio</span></p>
+                                            <h5 className="company">Nelson Stud Welding | <span className="location">Elyria, Ohio</span></h5>
                                         </div>
                                         <div className="col-span-1">
                                             <p className="position">Technical Communicator</p>
@@ -108,7 +108,7 @@ export function Resume() {
                                         </div>
 
                                         <div className="col-span-3">
-                                            <p className="company">CHC Physical Therapy | <span className="location">Cleveland, Ohio</span></p>
+                                            <h5 className="company">CHC Physical Therapy | <span className="location">Cleveland, Ohio</span></h5>
                                         </div>
                                         <div className="col-span-1">
                                             <p className="position">Freelance <abbr title="User Experience">UX</abbr> Consultant</p>
@@ -127,7 +127,7 @@ export function Resume() {
                                         </div>
 
                                         <div className="col-span-3">
-                                            <p className="company">Philips Healthcare | <span className="location">Cleveland, Ohio</span></p>
+                                            <h5 className="company">Philips Healthcare | <span className="location">Cleveland, Ohio</span></h5>
                                         </div>
                                         <div className="col-span-1">                                    
                                             <p className="position">Technical Writer (Contractor)</p>
@@ -146,7 +146,7 @@ export function Resume() {
                                         </div>
 
                                         <div className="col-span-3">
-                                            <p className="company">Fluke Biomedical | <span className="location">Solon, Ohio</span></p> 
+                                            <h5 className="company">Fluke Biomedical | <span className="location">Solon, Ohio</span></h5> 
                                         </div>
                                         <div className="col-span-1">
                                             <p className="position">Technical Writer</p>
@@ -162,7 +162,7 @@ export function Resume() {
                                         </div>
 
                                         <div className="col-span-3">
-                                            <p className="company">Brulant | <span className="location">Beachwood, Ohio</span></p>
+                                            <h5 className="company">Brulant | <span className="location">Beachwood, Ohio</span></h5>
                                         </div>
                                         <div className="col-span-1">
                                             <p className="position"><abbr title="Search Engine Optimization">SEO</abbr> Analyst Intern</p>
@@ -178,7 +178,7 @@ export function Resume() {
                                         </div>
 
                                         <div className="col-span-3">
-                                            <p className="company">Sherwin-Williams HQ | <span className="location">Cleveland, Ohio</span></p>
+                                            <h5 className="company">Sherwin-Williams HQ | <span className="location">Cleveland, Ohio</span></h5>
                                         </div>
                                         <div className="col-span-1">
                                             <p className="position">Web Analyst Co-op</p>
@@ -206,7 +206,7 @@ export function Resume() {
                                     <div className="grid gap-4 grid-cols-2">
                                         <div className="col-span-1">
                                             <p className="position">Masters of Science, <abbr title="Information Architecture & Knowledge Management">IAKM</abbr>, <span className="timeline">August 2014</span></p>
-                                            <p className="company">Kent State University | <span className="location">Kent, Ohio</span></p>
+                                            <p>Kent State University | <span className="location">Kent, Ohio</span></p>
                                         </div>
                                         <div className="col-span-1">
                                             <ul className="fa-ul clearfix">
@@ -216,7 +216,7 @@ export function Resume() {
                                         </div>
                                         <div className="col-span-1">
                                             <p className="position">Bachelors of Arts, Cum Laude, Communications, <span className="timeline">December 2009</span></p>
-                                            <p className="company">Cleveland State University | <span className="location">Cleveland, Ohio</span></p>
+                                            <p>Cleveland State University | <span className="location">Cleveland, Ohio</span></p>
                                         </div>
                                         <div className="col-span-1">
                                             <ul>
