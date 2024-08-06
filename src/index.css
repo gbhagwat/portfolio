@@ -1,11 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 body {
-  margin: 0;
   font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  @apply text-neutral m-0;
 }
 
 code {
@@ -14,9 +15,9 @@ code {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  @apply text-neutral;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
-  color: rgba(21,18,20,80%);    
+  font-weight: 600;    
 }
 
 h1 {
@@ -33,12 +34,11 @@ h3 {
 }
 
 h4 {
-  @apply text-2xl;
-  color: #6D66CC;
+  @apply text-xl text-light-purple;
 }
 
 h5 {
-  @apply text-xl text-primary;
+  @apply text-lg text-light-purple;
 }
 
 p {
@@ -46,47 +46,40 @@ p {
 }
 
 blockquote {
-  color: rgba(21,18,20,80%);
-  font-style: italic;
-  padding-left: 1.5rem;
-  margin-right: 1.5rem;
-  border-left: 6px solid #5850d1;
+  @apply text-neutral italic pl-3 mr-3 border-l-4 border-light-purple;
 }
 
 em, strong {
-  color: #F05271;
+  @apply text-primary;
 }
 
 a {
-  color: #6D66CC;
+  @apply text-light-purple;
 }
 
 .btn {
   @apply btn-outline rounded-none;
 }
 
-.btn-outline-primary {
-  border-color: #5850d1;
-  color: #5850d1;
+.btn-outline-secondary {
+  @apply bg-white border border-secondary text-secondary rounded-none;
   font-family: 'Montserrat', sans-serif;
-  border-radius: 0;
-      letter-spacing: .05rem;
+  letter-spacing: .05rem;
 }
 
-.btn-outline-primary:not(:disabled):not(.disabled):hover, 
-.btn-outline-primary:not(:disabled):not(.disabled):active {
-  background-color: #383899;
-  border-color: #383899;
+.btn-outline-secondary:not(:disabled):not(.disabled):hover, 
+.btn-outline-secondary:not(:disabled):not(.disabled):active {
+  @apply bg-dark-purple border border-dark-purple;
 }
 
-.btn-outline-primary:not(:disabled):not(.disabled).active:focus, 
-.btn-outline-primary:not(:disabled):not(.disabled):active:focus, 
-.show>.btn-outline-primary.dropdown-toggle:focus {
+.btn-outline-secondary:not(:disabled):not(.disabled).active:focus, 
+.btn-outline-secondary:not(:disabled):not(.disabled):active:focus, 
+.show>.btn-outline-secondary.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgb(62 56 153 / 50%);
 }
 
 .nav-link {
-  color: rgba(21,18,20,.7);
+  @apply text-neutral;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
 }
@@ -102,7 +95,7 @@ a {
 }
 
 .tab:is(input:checked) {
-  @apply bg-primary text-white;
+  @apply bg-primary font-bold text-white;
 }
 
 input[name="my_tabs_2"]:is(input:checked),
@@ -133,7 +126,7 @@ ol {
   @apply rounded-none mt-1;
 }
 .card-title {
- @apply text-[#rgba(21,18,20,80%)] uppercase mb-3;
+ @apply text-neutral uppercase mb-3;
 }
 
 h2.card-title {
@@ -142,4 +135,17 @@ h2.card-title {
 
 h3.card-title {
   @apply text-2xl;
+}
+
+/* Resume */
+.company {
+  @apply border-b border-secondary pb-3;
+}
+
+.location {
+  @apply italic text-base;
+}
+
+.position {
+  @apply text-base font-bold text-primary;
 }
