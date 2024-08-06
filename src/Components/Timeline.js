@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom';
 
 export function Timeline(){
     return (
-        <><section id="timeline" className="timeline_journey">
+        <>
+        <section id="timeline" className="timeline_journey">
         <div className="container">
           <div className="timeline-item">
             <div className="timeline-img"></div>
@@ -132,20 +133,21 @@ export function Timeline(){
             </div>
           </div>
         </div>
-      </section><nav aria-label="Page navigation" className="flex flex-col mt-5">
-          <ul className="flex flex-row justify-content-center self-center">
-            <li className="page-item">
-              <Link className="btn btn-outline-primary" to="/#kudos"
-              >READ WHAT OTHERS ARE SAYING
-                <span className="sr-only">About Gabrielle</span></Link>
-            </li>
-            <li className="page-item">
-            <Link
-                className="bnt-more btn btn-outline-primary"
-                to="/resume">
-                READ MY RESUME</Link>
-            </li>
-          </ul>
+        </section>
+        <nav aria-label="Page navigation" className="flex flex-col mt-5">
+            <ul className="flex flex-row justify-content-center self-center">
+              <li className="page-item">
+                <Link className="btn btn-outline-primary" to="/#kudos"
+                >READ WHAT OTHERS ARE SAYING
+                  <span className="sr-only">About Gabrielle</span></Link>
+              </li>
+              <li className="page-item">
+              <Link
+                  className="bnt-more btn btn-outline-primary"
+                  to="/resume">
+                  READ MY RESUME</Link>
+              </li>
+            </ul>
         </nav></>    
     )
 }

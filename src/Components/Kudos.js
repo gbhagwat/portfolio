@@ -2,13 +2,9 @@ import '../Assets/styles/kudos.css';
 
 export function Kudos(){
     return (
-      <section class="container" id="kudos">
+      <section className="container" id="kudos">
         <div className="pt-3 pb-5 mb-5">
-            <div id="myCarousel" className="carousel">
-            <div className="carousel-inner">
-                <div className="carousel-item active">
-                <div className="row">
-                    <div className="col-sm-6">
+        <div className="grid grid-cols-2">
                     <div className="testimonial-wrapper">
                         <div className="testimonial">
                         <p>
@@ -46,10 +42,8 @@ export function Kudos(){
                         <div className="media">
                         <div className="media-body">
                             <div className="overview">
-                            <div className="name"><b>Scott Spaulding</b></div>
-                            <div className="details">
-                                Senior Front-End Developer / CACI International
-                            </div>
+                                <div><b>Scott Spaulding</b></div>
+                                <div>Senior Front-End Developer / CACI International</div>
                             </div>
                         </div>
                         </div>
@@ -67,8 +61,8 @@ export function Kudos(){
                         <div className="media">
                         <div className="media-body">
                             <div className="overview">
-                            <div className="name"><b>Jason Ogle</b></div>
-                            <div className="details">
+                            <div><b>Jason Ogle</b></div>
+                            <div>
                                 Senior UX/UI Engineer & User Defenders Podcast
                                 Creator / CACI International
                             </div>
@@ -76,8 +70,6 @@ export function Kudos(){
                         </div>
                         </div>
                     </div>
-                    </div>
-                    <div className="col-sm-6">
                     <div className="testimonial-wrapper">
                         <div className="testimonial">
                         <p>
@@ -103,8 +95,8 @@ export function Kudos(){
                         <div className="media">
                         <div className="media-body">
                             <div className="overview">
-                            <div className="name"><b>Michael Freudiger</b></div>
-                            <div className="details">
+                            <div><b>Michael Freudiger</b></div>
+                            <div>
                                 Web Design Manager / CACI International
                             </div>
                             </div>
@@ -132,8 +124,8 @@ export function Kudos(){
                         <div className="media">
                         <div className="media-body">
                             <div className="overview">
-                            <div className="name"><b>Lisa Brunner</b></div>
-                            <div className="details">
+                            <div><b>Lisa Brunner</b></div>
+                            <div>
                                 Team Lead / CACI International
                             </div>
                             </div>
@@ -141,10 +133,6 @@ export function Kudos(){
                         </div>
                     </div>
                     </div>
-                </div>
-                </div>
-            </div>
-            </div>
         </div>
       </section>        
     )

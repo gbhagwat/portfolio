@@ -38,7 +38,7 @@ h4 {
 }
 
 h5 {
-  @apply text-xl;
+  @apply text-xl text-primary;
 }
 
 p {
@@ -113,6 +113,19 @@ input[name="my_tabs_3"]:is(input:checked){
 input[name="my_tabs_2"]:is(input[type="radio"]),
 input[name="my_tabs_3"]:is(input[type="radio"]) {
   @apply min-w-[225px] text-base border-b-2 border-b-secondary;
+}
+
+.usability-study input[name="my_tabs_2"]:is(input[type="radio"]) {
+  @apply min-w-[175px];
+}
+
+/* Lists */
+ul:not(footer ul):not(ul.flex) {
+  @apply list-disc ml-5;
+}
+
+ol {
+  @apply list-decimal ml-5;
 }
 
 /* Cards */

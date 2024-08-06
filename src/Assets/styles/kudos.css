@@ -1,73 +1,28 @@
 /* kudos */
-.carousel {
-    padding: 80px 0;
+.testimonial-wrapper {
+    @apply p-2;
  }
  
- .carousel .carousel-item {
-     overflow: hidden;
-     min-height: 635px;
-     font-size: 1rem;
- }
- .carousel .media {
-     position: relative;
-     padding: 0 0 0 20px;
- }
- .carousel .media img {
-     width: 25%;
-     height: 25%;
-     display: block;
-     border-radius: 50%;
- }
- .carousel .testimonial-wrapper {
-     padding: 0 10px;
- }
- .carousel .testimonial {
-     position: relative;
-     padding: 15px;
-     border: 1px solid rgb(222, 226, 230);
-     border-radius: 3px;
-     margin-bottom: 15px;
+.testimonial {
+    @apply  relative p-4 mb-2 border;
+    @layer  border-[rgb(222, 226, 230)];
  }
  
- .carousel .testimonial::after {
+ .testimonial::after {
      content: "";
-     width: 15px;
-     height: 15px;
-     display: block;
-     background: #f1f1f1;
-     border: 1px solid #efefef;
-     border-width: 0 0 1px 1px;
-     position: absolute;
-     bottom: -8px;
-     left: 46px;
-     transform: rotateZ(-46deg);
+     @apply w-4 h-4 block bg-accent border border-accent absolute -bottom-2 left-12 origin-center -rotate-45;
+     @layer border-t-0 border-r-0 border-b-1 border-l-1;
  }
- .carousel .overview {
-     padding: 3px 0 0 15px;
+
+.overview {
+     @apply pt-2 pr-0 pb-0 pl-5;
  }
- .carousel .overview .details {
-     padding: 5px 0 8px;
- }
- .carousel .overview b {
+
+.overview b {
      text-transform: uppercase;
      color: #4ECDC4;
  }
- .carousel .carousel-indicators {
-     bottom: -20px;
- }
- .carousel-indicators li, .carousel-indicators li.active {
-     width: 20px;
-     height: 20px;
-     border-radius: 50%;
-     margin: 1px 2px;
-     box-sizing: border-box;
- }
- .carousel-indicators li {	
-     background: #e2e2e2;
-     border: 4px solid #fff;
- }
- .carousel-indicators li.active {
-     color: #fff;
-     background: #4ECDC4;
-     border: 5px double;    
+
+ .media-body {
+    @apply px-4 py-2;
  }

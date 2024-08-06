@@ -5,13 +5,33 @@ import { Resume } from './Pages/Resume';
 import { UxCaseStudies } from './Pages/UxCaseStudies';
 import { InformationArchitecture } from './Pages/InformationArchitecture';
 import { UserResearch } from './Pages/UserResearch';
-import { UxPrinciples } from './Pages/UxPrinciples';
-import { UsabilityStudy } from './Pages/UsabilityStudy';
+// import { UxPrinciples } from './Pages/UxPrinciples';
+// import { UsabilityStudy } from './Pages/UsabilityStudy';
+import { Development } from './Pages/Development';
+import { VisualDesign } from './Pages/VisualDesign';
 
 import { Link, Routes, Route } from 'react-router-dom';
 import logo from '../src/logo.png';
+import { UxLeadership } from './Pages/UxLeadership';
+
+const links = [
+  { to: "/ux-case-studies", pageTitle: "UX Case Studies" },
+  { to: "/ux-leadership", pageTitle: "UX Leadership" },
+  { to: "/development", pageTitle: "Front-End Development" },
+  { to: "/visual-design", pageTitle: "Design" },
+  { to: "/information-architecture", pageTitle: "Information Architecture" },
+  // { to: "/ux-principles", pageTitle: "UX Practices & Principles" },
+  // { to: "/usability-study", pageTitle: "Usability Study" },
+  { to: "/user-research", pageTitle: "User Research" }
+]
 
 function App() {
+  const projectsLinks = links.map(link =>
+    <li key={link.id}>
+      <Link className="nav-link" to={link.to}>{link.pageTitle}</Link>
+    </li>
+  );
+
   return (
     <div className="container mx-auto">
         <div className="navbar bg-base-100">
@@ -38,11 +58,7 @@ function App() {
               <li>
                 <a className="nav-link">Projects</a>
                 <ul className="p-2">
-                  <li><Link className="nav-link" to="/ux-case-studies">UX Case Studies</Link></li>
-                  <li><Link className="nav-link" to="/information-architecture" href="#">Information Architecture</Link></li>
-                  <li><Link className="nav-link" to="/ux-principles">UX Practices & Principles</Link></li>
-                  <li><Link className="nav-link" to="/usability-study">Usability Study</Link></li>
-                  <li><Link className="nav-link" to="/user-research">User Research</Link></li>    
+                  {projectsLinks}
                 </ul>
               </li>
               <li><Link className="nav-link" to="/resume">Resume</Link></li>
@@ -59,11 +75,7 @@ function App() {
               <details>
                 <summary className="nav-link">Projects</summary>
                 <ul className="p-2">
-                  <li><Link className="nav-link" to="/ux-case-studies">UX Case Studies</Link></li>
-                  <li><Link className="nav-link" to="/information-architecture" href="#">Information Architecture</Link></li>
-                  <li><Link className="nav-link" to="/ux-principles">UX Practices & Principles</Link></li>
-                  <li><Link className="nav-link" to="/usability-study">Usability Study</Link></li>
-                  <li><Link className="nav-link" to="/user-research">User Research</Link></li>   
+                  {projectsLinks}
                 </ul>
               </details>
             </li>
@@ -75,11 +87,14 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/resume" element={<Resume />} />
+        <Route path="/development" element={<Development />} />
+        <Route path="/visual-design" element={<VisualDesign />} />
         <Route path="/ux-case-studies" element={<UxCaseStudies />} />
         <Route path="/information-architecture" element={<InformationArchitecture />} />
         <Route path="/user-research" element={<UserResearch />} />
-        <Route path="/ux-principles" element={<UxPrinciples />} />        
-        <Route path="/usability-study" element={<UsabilityStudy />} />                
+        <Route path="/ux-leadership" element={<UxLeadership />} />
+        {/* <Route path="/ux-principles" element={<UxPrinciples />} />         */}
+        {/* <Route path="/usability-study" element={<UsabilityStudy />} />                 */}
       </Routes>
     </div>
   );

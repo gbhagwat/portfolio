@@ -4,7 +4,6 @@ import {Timeline} from '../Components/Timeline';
 import {Kudos} from '../Components/Kudos';
 import {Footer} from '../Components/Footer';
 
-
 export function Home() {
     const home = true;
     const next = "/about";
