@@ -15,14 +15,12 @@ export function Intro(){
             Front-End Development.
           </p>
   
-          <a href="#timeline" className="btn btn-outline-primary"
-            >FOLLOW MY UX JOURNEY</a
-          >
+          <a href="#timeline" className="btn btn-outline-secondary"
+            >FOLLOW MY UX JOURNEY</a>
           <a
             href="mailto:gabrielle.bhagwat@gmail.com"
-            className="btn btn-outline-primary"
-            >CONTACT ME</a
-          >
+            className="btn btn-outline-secondary"
+            >CONTACT ME</a>
   
           <a className="scroll" href="#timeline"
             ><span></span><span></span><span></span

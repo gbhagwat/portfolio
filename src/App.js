@@ -55,13 +55,13 @@ function App() {
               tabIndex={0}
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
               <li><Link className="nav-link" to="/about">About</Link></li>
+              <li><Link className="nav-link" to="/resume">Resume</Link></li>
               <li>
                 <a className="nav-link">Projects</a>
                 <ul className="p-2">
                   {projectsLinks}
                 </ul>
-              </li>
-              <li><Link className="nav-link" to="/resume">Resume</Link></li>
+              </li>              
               </ul>
           </div>
           <Link to="/">
@@ -69,9 +69,10 @@ function App() {
           </Link>
         </div>
         <div className="navbar-end hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
-          <li><Link className="nav-link" to="/about">About</Link></li>
-          <li>
+          <ul className="menu menu-horizontal px-1 min-w-[170px]">
+            <li><Link className="nav-link" to="/about">About</Link></li>
+            <li><Link className="nav-link" to="/resume">Resume</Link></li>
+            <li>
               <details>
                 <summary className="nav-link">Projects</summary>
                 <ul className="p-2">
@@ -79,10 +80,10 @@ function App() {
                 </ul>
               </details>
             </li>
-            <li><Link className="nav-link" to="/resume">Resume</Link></li>
-            </ul>
+          </ul>
         </div>
       </div>
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

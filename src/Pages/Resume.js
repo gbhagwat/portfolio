@@ -2,10 +2,10 @@ import { Footer } from "../Components/Footer";
 
 export function Resume() {
     const home = false;
-    const prev = "/user-research";
-    const next = "/";
-    const prevText = "Previous | User Research";
-    const nextText = "Return Home";
+    const prev = "/about";
+    const next = "/ux-case-studies";
+    const prevText = "Previous | About";
+    const nextText = "UX Case Studies | Next";
     return (
         <div>
             <section id="resume">

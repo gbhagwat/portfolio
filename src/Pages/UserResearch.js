@@ -4,9 +4,9 @@ import PDF from "../Assets/doc/AnalyzeandCommunicateUserResearchFindings-GBZ.pdf
 export function UserResearch() {
     const home = false;
     const prev = "/information-architecture";
-    const next = "/resume";
+    const next = "/";
     const prevText = "Previous | Information Architecture";
-    const nextText = "Resume | Next";
+    const nextText = "Return Home";
     return (
         <div>
       <section id="user-research">

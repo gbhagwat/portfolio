@@ -6,7 +6,7 @@ import pinkResume from "../Assets/images/case-studies/pink_resume.png";
 
 export function UxCaseStudies() {
     const home = false;
-    const prev = "/about";
+    const prev = "/resume";
     const next = "/ux-leadership";
     const prevText = "Previous | About";
     const nextText = "UX Leadership | Next";

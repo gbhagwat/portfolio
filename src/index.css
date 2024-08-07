@@ -62,7 +62,7 @@ a {
 }
 
 .btn-outline-secondary {
-  @apply bg-white border border-secondary text-secondary rounded-none;
+  @apply bg-white border border-secondary text-secondary;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: .05rem;
 }

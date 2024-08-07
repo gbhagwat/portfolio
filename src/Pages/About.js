@@ -15,9 +15,9 @@ const roles = [
 export function About() {
     const home = false;
     const prev = "/";
-    const next = "/ux-case-studies";
+    const next = "/resume";
     const prevText = "Return Home";
-    const nextText = "UX Case Studies | Next";
+    const nextText = "Resume | Next";
     const listItems = roles.map(role =>
       <li key={role.id}>
         <em>{role.title}.</em> {role.summary}
