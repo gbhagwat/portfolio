@@ -1,11 +1,13 @@
 import { Footer } from "../Components/Footer";
 
 export function Resume() {
-    const home = false;
-    const prev = "/about";
-    const next = "/ux-case-studies";
-    const prevText = "Previous | About";
-    const nextText = "UX Case Studies | Next";
+    const nav = {
+        home: false,
+        prev: "/about",
+        next: "/ux-case-studies",
+        prevText: "Previous | About",
+        nextText: "UX Case Studies | Next"
+      }    
     return (
         <div>
             <section id="resume">
@@ -231,7 +233,7 @@ export function Resume() {
                     </div>
                 </div>
             </section>
-            <Footer home={home} prev={prev} next={next} prevText={prevText} nextText={nextText} /> 
-        </div>
+            <Footer home={nav.home} prev={nav.prev} next={nav.next} prevText={nav.prevText} nextText={nav.nextText} />
+            </div>
     ) 
 }

@@ -5,16 +5,18 @@ import {Kudos} from '../Components/Kudos';
 import {Footer} from '../Components/Footer';
 
 export function Home() {
-    const home = true;
-    const next = "/about";
-    const nextText = "Read More";
+    const nav = {
+        home: true,
+        next: "/about",
+        nextText: "Read More"
+    }
+
     return (
-        <div>
-            <Social />
+        <><Social /><div>
             <Intro />
             <Timeline />
             <Kudos />
-            <Footer home={home} next={next} nextText={nextText} />
-        </div>
+            <Footer home={nav.home} next={nav.next} nextText={nav.nextText} />
+        </div></>
     ) 
 }

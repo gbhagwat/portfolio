@@ -2,11 +2,14 @@ import { Footer } from "../Components/Footer";
 import PDF from "../Assets/doc/AnalyzeandCommunicateUserResearchFindings-GBZ.pdf";
 
 export function UserResearch() {
-    const home = false;
-    const prev = "/information-architecture";
-    const next = "/";
-    const prevText = "Previous | Information Architecture";
-    const nextText = "Return Home";
+    const nav = {
+        home: false,
+        prev: "/usability-study",
+        next: "/ux-leadership",
+        prevText: "Previous | Usability Study",
+        nextText: "UX Leadership | Next"
+      }    
+
     return (
         <div>
       <section id="user-research">
@@ -298,7 +301,7 @@ export function UserResearch() {
             </div>
         </div>
       </section>
-        <Footer home={home} prev={prev} next={next} prevText={prevText} nextText={nextText} /> 
-        </div>
+      <Footer home={nav.home} prev={nav.prev} next={nav.next} prevText={nav.prevText} nextText={nav.nextText} />
+      </div>
     ) 
 }

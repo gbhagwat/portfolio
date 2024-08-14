@@ -7,20 +7,22 @@ import seal from "../Assets/images/design/seal.png";
 import sealMakalu from "../Assets/images/design/seal_makalu.png";
 
 export function VisualDesign() {
-    const home = false;
-    const prev = "/development";
-    const next = "/information-architecture";
-    const prevText = "Prev | Front-End Development";
-    const nextText = "Information Architecture | Next";
+  const nav = {
+    home: false,
+    prev: '/development',
+    next: '/ui-design',
+    prevText: 'Previous | Front-End Development',
+    nextText: 'UI Design | Next'
+  }  
 
     return (
         <div>
           <section className="container pt-5" id="design">
             <div className="grid grid-cols-6 gap-12">
 
-                    <div class="col-span-3 card card-bordered">
-                    <div class="card-body">
-                    <h2 class="card-title">Makalu Landing Page</h2>
+                    <div className="col-span-3 card card-bordered">
+                    <div className="card-body">
+                    <h2 className="card-title">Makalu Landing Page</h2>
                     <p>
                       As UI Designer for the team, I was responsible for giving the team
                       several options for a redesign of the Makalu products landing page
@@ -86,15 +88,15 @@ export function VisualDesign() {
                   </p>
                     </div>
                   </div>
-                  <div class="col-span-3">
+                  <div className="col-span-3">
                     <img alt="" src={makalu4} />
                     <img alt="" src={makalu1} />
                     <img alt="" src={makalu3} />     
                   </div>                    
 
-                <div class="col-span-6 card card-bordered">
-                  <div class="card-body">
-                    <h4 class="purple my-3">Makalu Seal Variations</h4>
+                <div className="col-span-6 card card-bordered">
+                  <div className="card-body">
+                    <h4 className="purple my-3">Makalu Seal Variations</h4>
                     <p>
                       I designed the seal - inspired by our customer - to visually
                       inspire a shared vision across the Bodhi, MOST and Chatsurfer
@@ -103,7 +105,7 @@ export function VisualDesign() {
                     </p>                        
                   </div>
                 </div>
-                <div class="col-span-6 grid grid-cols-2">
+                <div className="col-span-6 grid grid-cols-2">
                 <div>
                   <img alt="" src={seal} />
                 </div>
@@ -113,7 +115,7 @@ export function VisualDesign() {
             </div>
           </div>
           </section>
-          <Footer home={home} prev={prev} next={next} prevText={prevText} nextText={nextText} /> 
+          <Footer home={nav.home} prev={nav.prev} next={nav.next} prevText={nav.prevText} nextText={nav.nextText} />
         </div>
     ) 
 }

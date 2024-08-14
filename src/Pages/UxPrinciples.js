@@ -10,11 +10,14 @@ import Process from "../Assets/images/ux-principles/process.png";
 import AppWireframe from "../Assets/images/ux-principles/app-wireframe.png";
 
 export function UxPrinciples() {
-    const home = false;
-    const prev = "/information-architecture";
-    const next = "/usability-study";
-    const prevText = "Previous | Information Architecture";
-    const nextText = "Usability Study | Next";
+    const nav = {
+        home: false,
+        prev: "/information-architecture",
+        next: "/usability-study",
+        prevText: "Previous | Information Architecture",
+        nextText: "Usability Study | Next"
+    }    
+
     return (
         <div>
             <section id="ux-principles">
@@ -255,7 +258,7 @@ export function UxPrinciples() {
                                         <div role="tabpanel" className="tab-content">
                                             <div className="card card-bordered">
                                                 <div className="card-body">
-                                                    <h2 class="card-title">iMagine</h2>
+                                                    <h2 className="card-title">iMagine</h2>
                                                     <em>Designing Something New Based on Your Understanding of the Design Problem</em>
                                                     <p>Here are several sketches of Andrew's journey through a my "imagined" registration process.</p>
                                                     <img src={Registration1} alt="Registration Sketch 1" />
@@ -361,7 +364,7 @@ export function UxPrinciples() {
                                                         </tbody>
                                                     </table>
                                                     
-                                                    <h3 class="card-title">Take-Aways</h3>
+                                                    <h3 className="card-title">Take-Aways</h3>
                                                     <ul>
                                                         <li>Parson's had incredible presentation of student's work that was both aesthetically pleasing and useful.</li>
                                                         <li>Parson's had Connect section on home page to engage prospects and current students.</li>
@@ -403,7 +406,7 @@ export function UxPrinciples() {
                     </div>
                 </div>
             </section>
-            <Footer home={home} prev={prev} next={next} prevText={prevText} nextText={nextText} /> 
+            <Footer home={nav.home} prev={nav.prev} next={nav.next} prevText={nav.prevText} nextText={nav.nextText} />
         </div>
     ) 
 

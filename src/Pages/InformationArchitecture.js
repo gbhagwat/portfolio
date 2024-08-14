@@ -12,11 +12,13 @@ import Adam from "../Assets/images/info-arch/persona-adam.png";
 import Maria from "../Assets/images/info-arch/persona-maria.png";
 
 export function InformationArchitecture() {
- const home = false;
- const prev = "/visual-design";
- const next = "/user-research";
- const prevText = "Previous | Design";
- const nextText = "User Research | Next";
+    const nav = {
+        home: false,
+        prev: "/ux-case-studies",
+        next: "/ux-principles",
+        prevText: "Previous | UX Case Studies",
+        nextText: "UX Practices & Principles | Next"
+      }
 
  return (
  <div>
@@ -208,7 +210,7 @@ export function InformationArchitecture() {
                         <div className="card-body">
                             <h3 className="card-title">Designing the User Experience</h3>
                             <div className="grid grid-cols-3 gap-2">
-                                    <div class="col-span-2">
+                                    <div className="col-span-2">
                                         <p>According to Jesse James Garrett, the field of <a href="http://www.jjg.net/elements/pdf/elements.pdf" target="_blank" rel="noreferrer">
                                         User Experience <i className="fa fa-external-link"></i></a> covers a wide range (from conception to completion) of elements:</p>
                                         <ul>
@@ -233,11 +235,11 @@ export function InformationArchitecture() {
                     <div className="card card-bordered">
                         <div className="card-body">
                             <h3 className="card-title">Identifying the Objectives</h3>
-                            <h4 class="card-subtitle">Target Audience</h4>
+                            <h4 className="card-subtitle">Target Audience</h4>
                             <p>The client already has 4 pretty well-defined target audiences that it wants to re-purpose its site content around - The Golfer, The Young Athlete, The Baby Boomer, and The Weekend Warrior. Later in the process, I researched and found a 5th
                             target group - The Desk Jockey - which the client has decided to implement.</p>
 
-                            <h4 class="card-subtitle">Personas</h4>
+                            <h4 className="card-subtitle">Personas</h4>
                             <div className="grid grid-cols-2">
                                 <div>
                                     <h5>The Young Athlete</h5>
@@ -257,7 +259,7 @@ export function InformationArchitecture() {
                                 </div>
                             </div>
 
-                            <h4 class="card-subtitle">Look & Feel</h4>
+                            <h4 className="card-subtitle">Look & Feel</h4>
                             <p>Energized and powerful (sports physical therapy) meets compassionate and natural (holistic wellness approach)</p>
 
                             <h4 className="card-subtitle">Business Goals</h4>
@@ -318,7 +320,7 @@ export function InformationArchitecture() {
             </div>
         </div>
     </section>
-    <Footer home={home} prev={prev} next={next} prevText={prevText} nextText={nextText} /> 
- </div>
+    <Footer home={nav.home} prev={nav.prev} next={nav.next} prevText={nav.prevText} nextText={nav.nextText} />
+    </div>
  ) 
 }

@@ -13,11 +13,15 @@ const roles = [
 
 
 export function About() {
-    const home = false;
-    const prev = "/";
-    const next = "/resume";
-    const prevText = "Return Home";
-    const nextText = "Resume | Next";
+
+  const nav = {
+    home: false,
+    prev: "/",
+    next: "/resume",
+    prevText: "Return Home",
+    nextText: "Resume | Next"
+  }  
+
     const listItems = roles.map(role =>
       <li key={role.id}>
         <em>{role.title}.</em> {role.summary}
@@ -105,7 +109,7 @@ export function About() {
               </div>
             </div>
           </section>
-          <Footer home={home} prev={prev} next={next} prevText={prevText} nextText={nextText} /> 
+          <Footer home={nav.home} prev={nav.prev} next={nav.next} prevText={nav.prevText} nextText={nav.nextText} />
         </div>
     ) 
 }

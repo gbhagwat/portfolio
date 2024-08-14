@@ -2,11 +2,14 @@ import { Footer } from "../Components/Footer";
 import Participants from "../Assets/images/participants.png";
 
 export function UsabilityStudy() {
-    const home = false;
-    const prev = "/ux-principles";
-    const next = "/user-research";
-    const prevText = "Previous | UX Practices & Principles";
-    const nextText = "User Research | Next";
+    const nav = {
+        home: false,
+        prev: "/ux-principles",
+        next: "/user-research",
+        prevText: "Previous | UX Practices & Principles",
+        nextText: "User Research | Next"
+    }
+
     return (
         <div>
         <section id="usability-study">
@@ -157,7 +160,7 @@ export function UsabilityStudy() {
                                                         <p>Finally, the last questions give us more of an ideal who likely would be using the internet to order pizza in the future thus determining their level of motivation. These final classifiers give us an ideal who is more likely to need to order pizza online in the future and to narrow it down to the final 5 users if we have more volunteers than we had anticipated.</p>
                                                         <p>The participants most fitting the criteria of the screener questionnaire were chosen to participate in the testing session which required the completion of several basic pizza ordering tasks on the pizza chain's site.</p>
 
-                                                    <h3 class="card-title">Testing Scenario</h3>
+                                                    <h3 className="card-title">Testing Scenario</h3>
                                                         <p>The team developed the tasks with novice to minimal users ordering pizza for a party. Test participants would have to walk through the site just as if they would if they were ordering pizza for a Super Bowl party. These basic steps provided an insight of the existing site issues.</p>
                                                         <p>To begin the ordering process, any visitor is required to enter a delivery address to get started. Ideally, most customers would prefer to sign up for coupons and deals in anticipation of savings and potential future orders. Whether it would be an elementary school's party or a <abbr title="National Football League" className="initialism">NFL</abbr> Super Bowl party, the group ordering guidelines would need to be applied to determine approximately how much food was needed to feed a large group. Plus, planning a party for a might have made the customer want to schedule in advance in preparation.</p>
                                                         <p>The next obvious step in the process would be to order the desired products - whether it be a pizza, pop or a side. Everyone on the pizza chain's site visits the site to place an order for pizza. Once the order was completed, the user would have to proceed to checkout and place the order. Entering special instructions for the delivery man is an optional site feature, but could come in handy when ordering within an apartment complex or a party center.</p>
@@ -340,7 +343,7 @@ export function UsabilityStudy() {
             </div>
             </div>
         </section>            
-            <Footer home={home} prev={prev} next={next} prevText={prevText} nextText={nextText} /> 
+            <Footer home={nav.home} prev={nav.prev} next={nav.next} prevText={nav.prevText} nextText={nav.nextText} />
         </div>
     ) 
 }

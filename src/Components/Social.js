@@ -6,7 +6,7 @@ import '../Assets/styles/social.css';
 
 export function Social(){
     return (
-        <div className="join join-vertical" id="social">
+        <aside className="h-screen sticky right-0 join join-vertical" id="social">
             <a
             href="https://www.linkedin.com/in/gabriellebhagwat/"
             className="btn join-item"
@@ -22,6 +22,6 @@ export function Social(){
             className="btn join-item"
             ><img src={email} alt="Email Gabrielle Bhagwat"
             /></a>
-        </div>
+        </aside>
     )
 }

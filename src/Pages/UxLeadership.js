@@ -4,22 +4,24 @@ import kickoff from '../Assets/doc/Nebula_Working_Group_InternalKickoff v2.1.pdf
 import guidingPrinciples from '../Assets/doc/Nebula_Guiding_Principles.jpg';
 
 export function UxLeadership() {
-    const home = false;
-    const prev = "/ux-case-studies";
-    const next = "/development";
-    const prevText = "Prev | UX Case Studies";
-    const nextText = "Front-End Development | Next";
+    const nav = {
+      home: false,
+      prev: "/user-research",
+      next: "/development",
+      prevText: "Previous | User Research",
+      nextText: "Front-End Development | Next"
+    }
 
     return (
       <div>
         <section id="leadership" className="container pt-5">
         <div className="grid grid-cols-6">
-          <div class="col-span-6">
+          <div className="col-span-6">
             <h1>UX Leadership</h1>
           </div>
-          <div class="card card-bordered col-span-6">
-            <div class="card-body">
-              <h2 class="card-title">UX/UI Team</h2>
+          <div className="card card-bordered col-span-6">
+            <div className="card-body">
+              <h2 className="card-title">UX/UI Team</h2>
               <p>
                 As team lead, the program manager tasked me with mapping our
                 team's path moving forward - our North Star.
@@ -35,15 +37,15 @@ export function UxLeadership() {
                 and documentation initiatives before the work was discontinued.
               </p>
               <embed
-                class="mb-5"
+                className="mb-5"
                 src={roadmap}
                 width="1080"
                 height="550" />
             </div>
           </div>
-          <div class="card card-bordered col-span-6">
-            <div class="card-body">
-              <h2 class="card-title">
+          <div className="card card-bordered col-span-6">
+            <div className="card-body">
+              <h2 className="card-title">
                 Nebula Guiding Principles for Design System
               </h2>
               <p>
@@ -61,9 +63,9 @@ export function UxLeadership() {
                 src={guidingPrinciples} />
             </div>
           </div>
-          <div class="card card-bordered col-span-6">
-            <div class="card-body">
-              <h2 class="card-title">Nebula Working Group</h2>
+          <div className="card card-bordered col-span-6">
+            <div className="card-body">
+              <h2 className="card-title">Nebula Working Group</h2>
               <p>
                 I created the initial kick-off meeting slides for the Nebula
                 Design System - setting the expectations and the mission for the
@@ -77,7 +79,7 @@ export function UxLeadership() {
           </div>
           </div>
         </section>
-      <Footer home={home} prev={prev} next={next} prevText={prevText} nextText={nextText} />
+        <Footer home={nav.home} prev={nav.prev} next={nav.next} prevText={nav.prevText} nextText={nav.nextText} />
       </div> 
     )
 }

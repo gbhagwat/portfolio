@@ -5,11 +5,14 @@ import newVersion from "../Assets/images/case-studies/2022_version.jpg";
 import pinkResume from "../Assets/images/case-studies/pink_resume.png";
 
 export function UxCaseStudies() {
-    const home = false;
-    const prev = "/resume";
-    const next = "/ux-leadership";
-    const prevText = "Previous | About";
-    const nextText = "UX Leadership | Next";
+    const nav = {
+        home: false,
+        prev: "/resume",
+        next: "/information-architecture",
+        prevText: "Previous | Resume",
+        nextText: "Information Architecture | Next"
+      }    
+
     return (
         <div>
             <section id="case-studies">
@@ -19,8 +22,8 @@ export function UxCaseStudies() {
                         <input type="radio" name="my_tabs_1" role="tab" className="tab" aria-label="User Research" defaultChecked />
                         <div role="tabpanel" className="tab-content">
                             <div className="card card-bordered">
-                                <div class="card-body">
-                                    <h2 class="card-title">User Research</h2>
+                                <div className="card-body">
+                                    <h2 className="card-title">User Research</h2>
                                     <p>
                                         July 20-22, 2023 |<em> A case study on user research for Jen's Psychiatry Services,a mental health care provider's online presence.</em>
                                     </p>
@@ -34,8 +37,8 @@ export function UxCaseStudies() {
                                 </div>
                             </div>
                             <div className="card card-bordered">
-                                <div class="card-body">
-                                    <h2 class="card-title">Early Ideation</h2>
+                                <div className="card-body">
+                                    <h2 className="card-title">Early Ideation</h2>
                                     <p><strong>Trust</strong>  can be built on a mental healthcare provider website through transparency.  Transparency can be demonstrated on the site through:</p>
                                     <ul>
                                         <li>Clearly displaying credentials, certifications and qualifications demonstrates competence.</li>
@@ -63,7 +66,7 @@ export function UxCaseStudies() {
                             </div>
                             <div className="card card-bordered">
                                 <div className="card-body">
-                                    <h2 class="card-title">The Solution</h2>
+                                    <h2 className="card-title">The Solution</h2>
                                     <p>Jen needs a transparent, collective site that showcases her credentials, endorsements and experience in one place and builds trust and credibility in her online presence.  The user experience should be compassionate, warm and welcoming to create a safe place for people in their most vulnerable moments. </p>    
                                     <p>The Early Ideation will provide me guidance in addressing the objectives.  The project is in its early phase - wireframing is in the works.</p>                                
                                 </div>
@@ -83,8 +86,8 @@ export function UxCaseStudies() {
                                 </div>
                             </div>
                             <div className="card card-bordered">
-                                <div class="card-body">
-                                    <h2 class="card-title">Navigation Items</h2>
+                                <div className="card-body">
+                                    <h2 className="card-title">Navigation Items</h2>
                                     <img src={psychServices} alt="Visual representation of information architecture" />
                                     <p className="mt-4">A potential patient visiting the site might follow the decision making process as follows:</p>
                                     
@@ -110,8 +113,8 @@ export function UxCaseStudies() {
                         <input type="radio" name="my_tabs_1" role="tab" className="tab" aria-label="UX/UI Design" />
                         <div role="tabpanel" className="tab-content">
                             <div className="card card-bordered">
-                                <div class="card-body">
-                                    <h2 class="card-title">UX/UI Design</h2>
+                                <div className="card-body">
+                                    <h2 className="card-title">UX/UI Design</h2>
                                     <p>
                                         February 15-22, 2002 |<em> A case study on modernizing the design and reviving the content of
                                         my portfolio.</em>
@@ -149,8 +152,8 @@ export function UxCaseStudies() {
                                 </div>
                             </div>
                             <div className="card card-bordered">
-                                <div class="card-body">
-                                    <h2 class="card-title">Design & Research</h2>
+                                <div className="card-body">
+                                    <h2 className="card-title">Design & Research</h2>
                                     <p>
                                     Fortunately, I recently started reviving my branding in a new version of my resume.</p>
                                     <p><em>Color Palette</em> --- I chose a purple and pink palette as it's very vibrant and lively. Both were backed by color psychology -  Purple can be connected to creativity and wisdom. It actually stimulates the brain activity used in problem solving. Whereas pink with its bright and cheerful appearance signifies hope. Someone seeing the world through rose-tinted glasses are seeing it with excessive optimism. I believe creativity and optimism.</p>
@@ -207,7 +210,7 @@ export function UxCaseStudies() {
                     </div>
                 </div>
             </section>
-            <Footer home={home} prev={prev} next={next} prevText={prevText} nextText={nextText} /> 
+            <Footer home={nav.home} prev={nav.prev} next={nav.next} prevText={nav.prevText} nextText={nav.nextText} />
         </div>
     ) 
 }
